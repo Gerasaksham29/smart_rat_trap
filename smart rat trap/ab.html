@@ -1,0 +1,51 @@
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="st.css" />
+  <script>
+  function choose(){
+  alert("Food Released");
+  }
+    function colRed(){
+	document.getElementById("ale").style.backgroundColor="red";
+	}
+	function colblue(){
+	document.getElementById("ale").style.backgroundColor="#00CED1";
+	}
+	function flashColor(){
+	var i=0;
+	while(i<10000){
+	
+    setInterval(function() {
+        colRed();
+    }, 2000 );
+	setInterval(function(){},2000);
+	setInterval(function() {
+        colblue();
+    }, 2000 );
+	i++;
+	}
+	}
+	flashColor();
+  </script>
+  </head>
+   <title>SMART RAT TRAP</title>
+	<body >
+		<div class="loginbox">
+		<img src="ab2.png" class="abc">
+			<h1>WELCOME TO THE SMARTEST RAT TRAP</h1>
+			<form>
+				<div id="ale" class="flashCol">
+				
+				<p>Congratulations.....!!! </p>
+				<p>Rat has been trapped !!!</p>
+				
+				</div>
+				
+				<!--<input type="submit" name="submit" value="DONE"><br>-->
+				
+				<pre> <input type="button" id="ch1" value="Release Food" onclick="choose()">                              <input type="button" id="ch2" value="Release Rat"></pre>
+			</form>
+		</div>
+		
+	</body>
+</html>
